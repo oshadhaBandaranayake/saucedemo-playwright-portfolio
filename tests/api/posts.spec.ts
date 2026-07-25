@@ -20,3 +20,18 @@ test ('Get - fetch all posts returns an array', async ({ request }) => {
     expect (Array.isArray(body)).toBeTruthy();
     expect (body.length).toBeGreaterThan(0);
 });
+
+test ('Post - create a new post', async ({ request }) =>{
+    const response = await request.post('/posts', {
+        data: {
+            title: 'My Portfolio Post',
+            body: 'Testing Playwright API capabilities',
+            userId: 1,
+        },
+    });
+
+    expect (response.status()).toBe(201);
+    const body = await response.json();
+    expect (body.title).toBe('My Portfolio Post');
+    expect (body.id).toBeDefined();
+});
