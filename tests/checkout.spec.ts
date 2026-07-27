@@ -34,6 +34,6 @@ test.describe ('Checkout Flow Tests', () => {
         await checkoutPage.firstNameInput.fill('Oshadha');
         await checkoutPage.lastNameInput.fill('Dilsankha');
         await checkoutPage.continueButton.click();
-        await expect(page.locator('[data-test="error"]')).toContainText('Postal code is required');
+        await expect(page.locator('[data-test="error"]')).toContainText('Postal Code is required');
     });
 });
