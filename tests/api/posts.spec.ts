@@ -35,3 +35,18 @@ test ('Post - create a new post', async ({ request }) =>{
     expect (body.title).toBe('My Portfolio Post');
     expect (body.id).toBeDefined();
 });
+
+test ('Put - update an existing post', async ({ request }) => {
+    const response = await request.put('/posts/1', {
+        data: {
+            id: 1,
+            title: 'Update Title',
+            body: 'Update Body',
+            userId: 1,
+        },
+    });
+
+    expect (response.status()).toBe(200);
+    const body = await response.json();
+    expect (body.title).toBe('Update Title');
+});
