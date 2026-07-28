@@ -21,19 +21,19 @@ CI/CD pipeline.
 - **SauceDemo** / **JSONPlaceholder** – demo applications under test
 
 ## Project Structure
-  pages/ Page Object Model classes
-  tests/ UI and API test specs
-  .github/ CI/CD workflow
+ - pages/ Page Object Model classes
+ - tests/ UI and API test specs
+ - .github/ CI/CD workflow
 
 ## How to Run Locally
-  git clone https://github.com/oshadhaBandaranayake/saucedemo-playwright-portfolio.git
-  cd saucedemo-playwright-portfolio
-  npm install
-  npx playwright install
-  npx playwright test
+ - git clone https://github.com/oshadhaBandaranayake/saucedemo-playwright-portfolio.git
+ - cd saucedemo-playwright-portfolio
+ - npm install
+ - npx playwright install
+ - npx playwright test
 
 ## View the HTML Report
-  npx playwright show-report
+ - npx playwright show-report
   
 ## Author
   **Oshadha Bandaranayake** – Aspiring QA Automation Engineer
