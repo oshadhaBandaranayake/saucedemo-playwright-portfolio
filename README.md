@@ -36,6 +36,6 @@ CI/CD pipeline.
   npx playwright show-report
   
 ## Author
-  **Your Name** – Aspiring QA Automation Engineer
+  **Oshadha Bandaranayake** – Aspiring QA Automation Engineer
   [LinkedIn](https://www.linkedin.com/in/oshadha-bandaranayake) · [GitHub](https://github.com/oshadhaBandaranayake)
   
