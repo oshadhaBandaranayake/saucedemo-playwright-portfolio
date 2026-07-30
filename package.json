@@ -2,7 +2,16 @@
   "name": "saucedemo-playwright-portfolio",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test tests/login.spec.ts tests/shopping.spec.ts tests/checkout.spec.ts",
+    "test:api": "playwright test tests/api",
+    "test:chromium": "playwright test --project=chromium",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://www.saucedemo.com"
+  },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
